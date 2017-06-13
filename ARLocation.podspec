@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ARLocation"
-  s.version      = "1.0.1"
+  s.version      = "1.0.3"
   s.summary      = "AR街景"
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/codeWorm2015/ARLocation.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/codeWorm2015/ARLocation.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   s.source_files  = "ARDemo/ARDemo/AR/**/*.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "ARDemo/ARDemo/AR/**/ARLocationVC.h"
+  s.public_header_files = "ARDemo/ARDemo/AR/**/ARLocationVC.h","ARDemo/ARDemo/AR/**/ARLocation.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "ARDemo/ARDemo/AR/*.{png}"
+  s.resources = "ARDemo/ARDemo/AR/*.{png,bundle}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

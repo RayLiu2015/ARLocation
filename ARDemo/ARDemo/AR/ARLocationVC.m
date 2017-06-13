@@ -6,8 +6,6 @@
 //  Copyright © 2017年 李策. All rights reserved.
 //
 
-#import "ARLocationCompassView.h"
-#import "ARLocationSensorManager.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AudioToolbox/AudioToolbox.h>
 
@@ -16,7 +14,10 @@
 #import "ARLocationModel.h"
 #import "ARLocationCalculator.h"
 #import "ARLocationCameraView.h"
+#import "ARLocationCompassView.h"
 #import "ARLocationThumbnailView.h"
+#import "ARLocationSensorManager.h"
+#import "UIImage+ARLocationBundle.h"
 
 
 @implementation ARLocationDataModel
@@ -108,7 +109,7 @@
     [self.view addSubview:self.dataView];
     
     UIButton *backBtn = [[UIButton alloc]initWithFrame:CGRectMake(20, 20, 44, 44)];
-    [backBtn setImage:[UIImage imageNamed:@"return@2x.png"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageMyBundleNamed:@"return@2x.png"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     backBtn.layer.cornerRadius = backBtn.frame.size.width*.5;
     backBtn.layer.borderColor = [UIColor blackColor].CGColor;

@@ -8,6 +8,7 @@
 
 #import "ARLocationCalculator.h"
 #import "ARLocationCompassView.h"
+#import "UIImage+ARLocationBundle.h"
 
 #define toRad(X) (X*M_PI/180.0)
 #define toDeg(X) (X*180.0/M_PI)
@@ -156,7 +157,7 @@
 - (void)createPointer{
     UIImageView *pointerImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, _radius*2, _radius*2)];
     pointerImageView.center = _point;
-    [pointerImageView setImage:[UIImage imageNamed:@"指针"]];
+    [pointerImageView setImage:[UIImage imageMyBundleNamed:@"指针"]];
     _pointerImageView = pointerImageView;
     [self addSubview:_pointerImageView];
 }

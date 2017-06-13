@@ -6,7 +6,7 @@
 //  Copyright © 2017年 codeWorm. All rights reserved.
 //
 
-#import "ARLocationVC.h"
+#import "ARLocation.h"
 #import "ViewController.h"
 #import "LocationManager.h"
 

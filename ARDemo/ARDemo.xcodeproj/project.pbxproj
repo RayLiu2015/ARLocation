@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F04C512FB530ECD6C4138192 /* Pods_ARDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A81CB264D7381C8F220C81E8 /* Pods_ARDemo.framework */; };
+		FC0F67741EEFF74000FE0B1A /* ARLocation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FC0F67731EEFF74000FE0B1A /* ARLocation.bundle */; };
+		FC0F67771EEFF78D00FE0B1A /* UIImage+ARLocationBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0F67761EEFF78D00FE0B1A /* UIImage+ARLocationBundle.m */; };
 		FC1B2B961EE8EAE000B465D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B2B951EE8EAE000B465D1 /* main.m */; };
 		FC1B2B991EE8EAE000B465D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B2B981EE8EAE000B465D1 /* AppDelegate.m */; };
 		FC1B2B9C1EE8EAE000B465D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B2B9B1EE8EAE000B465D1 /* ViewController.m */; };
@@ -18,11 +20,9 @@
 		FC1B2BB51EE8EB2000B465D1 /* ARLocationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B2BAF1EE8EB2000B465D1 /* ARLocationVC.m */; };
 		FC1B2BB61EE8EB2000B465D1 /* ARLocationCompassView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B2BB11EE8EB2000B465D1 /* ARLocationCompassView.m */; };
 		FC1B2BB71EE8EB2000B465D1 /* ARLocationSensorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1B2BB31EE8EB2000B465D1 /* ARLocationSensorManager.m */; };
-		FC9A59B61EEEE72800DDC56C /* return@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC9A59B51EEEE72800DDC56C /* return@2x.png */; };
 		FCC803CB1EE92F860073E799 /* ARLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC803CA1EE92F860073E799 /* ARLocationModel.m */; };
 		FCC803CE1EE9506F0073E799 /* ARLocationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC803CD1EE9506F0073E799 /* ARLocationCalculator.m */; };
 		FCC803D11EE954360073E799 /* ARLocationCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC803D01EE954360073E799 /* ARLocationCameraView.m */; };
-		FCE040861EEE4708007F048B /* 指针.png in Resources */ = {isa = PBXBuildFile; fileRef = FCE040851EEE4708007F048B /* 指针.png */; };
 		FCE0409F1EEEA936007F048B /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE0409E1EEEA936007F048B /* LocationManager.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,10 @@
 		7F7711E6F0A864ECF82DF919 /* Pods-ARDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARDemo/Pods-ARDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9F37ECBDD6D1872F911DF33F /* Pods-ARDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARDemo/Pods-ARDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A81CB264D7381C8F220C81E8 /* Pods_ARDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0F67731EEFF74000FE0B1A /* ARLocation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ARLocation.bundle; sourceTree = "<group>"; };
+		FC0F67751EEFF78D00FE0B1A /* UIImage+ARLocationBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ARLocationBundle.h"; sourceTree = "<group>"; };
+		FC0F67761EEFF78D00FE0B1A /* UIImage+ARLocationBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ARLocationBundle.m"; sourceTree = "<group>"; };
+		FC0F67781EEFF7C100FE0B1A /* ARLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARLocation.h; sourceTree = "<group>"; };
 		FC1B2B911EE8EAE000B465D1 /* ARDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC1B2B951EE8EAE000B465D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC1B2B971EE8EAE000B465D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,14 +52,12 @@
 		FC1B2BB11EE8EB2000B465D1 /* ARLocationCompassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocationCompassView.m; sourceTree = "<group>"; };
 		FC1B2BB21EE8EB2000B465D1 /* ARLocationSensorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationSensorManager.h; sourceTree = "<group>"; };
 		FC1B2BB31EE8EB2000B465D1 /* ARLocationSensorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocationSensorManager.m; sourceTree = "<group>"; };
-		FC9A59B51EEEE72800DDC56C /* return@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "return@2x.png"; sourceTree = "<group>"; };
 		FCC803C91EE92F860073E799 /* ARLocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationModel.h; sourceTree = "<group>"; };
 		FCC803CA1EE92F860073E799 /* ARLocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocationModel.m; sourceTree = "<group>"; };
 		FCC803CC1EE9506F0073E799 /* ARLocationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationCalculator.h; sourceTree = "<group>"; };
 		FCC803CD1EE9506F0073E799 /* ARLocationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocationCalculator.m; sourceTree = "<group>"; };
 		FCC803CF1EE954360073E799 /* ARLocationCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARLocationCameraView.h; sourceTree = "<group>"; };
 		FCC803D01EE954360073E799 /* ARLocationCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARLocationCameraView.m; sourceTree = "<group>"; };
-		FCE040851EEE4708007F048B /* 指针.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "指针.png"; sourceTree = "<group>"; };
 		FCE0409D1EEEA936007F048B /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		FCE0409E1EEEA936007F048B /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,8 +139,7 @@
 		FC1B2BAB1EE8EB1C00B465D1 /* AR */ = {
 			isa = PBXGroup;
 			children = (
-				FC9A59B51EEEE72800DDC56C /* return@2x.png */,
-				FCE040851EEE4708007F048B /* 指针.png */,
+				FC0F67731EEFF74000FE0B1A /* ARLocation.bundle */,
 				FC1B2BAC1EE8EB2000B465D1 /* ARLocationThumbnailView.h */,
 				FC1B2BAD1EE8EB2000B465D1 /* ARLocationThumbnailView.m */,
 				FC1B2BAE1EE8EB2000B465D1 /* ARLocationVC.h */,
@@ -153,6 +154,9 @@
 				FCC803CD1EE9506F0073E799 /* ARLocationCalculator.m */,
 				FCC803CF1EE954360073E799 /* ARLocationCameraView.h */,
 				FCC803D01EE954360073E799 /* ARLocationCameraView.m */,
+				FC0F67751EEFF78D00FE0B1A /* UIImage+ARLocationBundle.h */,
+				FC0F67761EEFF78D00FE0B1A /* UIImage+ARLocationBundle.m */,
+				FC0F67781EEFF7C100FE0B1A /* ARLocation.h */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -225,11 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCE040861EEE4708007F048B /* 指针.png in Resources */,
 				FC1B2BA41EE8EAE000B465D1 /* LaunchScreen.storyboard in Resources */,
+				FC0F67741EEFF74000FE0B1A /* ARLocation.bundle in Resources */,
 				FC1B2BA11EE8EAE000B465D1 /* Assets.xcassets in Resources */,
 				FC1B2B9F1EE8EAE000B465D1 /* Main.storyboard in Resources */,
-				FC9A59B61EEEE72800DDC56C /* return@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +302,7 @@
 				FC1B2B991EE8EAE000B465D1 /* AppDelegate.m in Sources */,
 				FC1B2BB71EE8EB2000B465D1 /* ARLocationSensorManager.m in Sources */,
 				FC1B2B961EE8EAE000B465D1 /* main.m in Sources */,
+				FC0F67771EEFF78D00FE0B1A /* UIImage+ARLocationBundle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
