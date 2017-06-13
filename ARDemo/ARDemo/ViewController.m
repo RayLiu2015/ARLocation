@@ -33,14 +33,6 @@
     [self startPosition];
 }
 
--(ARLocationDataModel *)ARLocationCurrentLocation{
-    return self.currentLocation;
-}
-
--(NSArray <ARLocationDataModel *> *)ARLocationAroundLocations{
-    return self.locations;
-}
-
 -(void)startPosition{
     [self.locations removeAllObjects];
     __weak __typeof(self) weakSelf = self;
@@ -65,7 +57,21 @@
     
 }
 
+#pragma mark - ARLocationDelegate
+-(ARLocationDataModel *)ARLocationCurrentLocation{
+    return self.currentLocation;
+}
 
+-(NSArray <ARLocationDataModel *> *)ARLocationAroundLocations{
+    return self.locations;
+}
 
+-(nullable ARLocationLabelStyle *)ARLocationLabelStyle{
+    ARLocationLabelStyle *style = [[ARLocationLabelStyle alloc] init];
+    style.backgroundColor = [UIColor blackColor];
+    style.textColor = [UIColor whiteColor];
+    style.alpha = 0.5;
+    return style;
+}
 
 @end

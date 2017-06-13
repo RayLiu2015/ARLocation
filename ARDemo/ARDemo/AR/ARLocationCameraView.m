@@ -10,7 +10,7 @@
 
 #define VecEdege 50
 #define MaxWidth 250
-#define TopBegin 100
+#define TopBegin 150
 
 @implementation ARLocationCameraView
 
@@ -27,7 +27,9 @@
         label.textColor = self.style.textColor;
         label.alpha = self.style.alpha;
     }else{
-        label.backgroundColor = [UIColor clearColor];
+        label.backgroundColor = [UIColor blackColor];
+        label.textColor = [UIColor whiteColor];
+        label.alpha = 0.5;
     }
     label.numberOfLines = 0;
     label.text = [NSString stringWithFormat:@"%@ - %.0lfm", location.name, location.distance];
