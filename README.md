@@ -10,3 +10,5 @@
 pod 'ARLocation'
 `
 
+iOS 11 之后, 这个基于ARKit实现这种功能的repo是非常不错的:
+https://github.com/ProjectDent/ARKit-CoreLocation
